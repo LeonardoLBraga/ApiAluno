@@ -1,0 +1,18 @@
+services:
+  webapi:
+    build: 
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: aspnetcore_api
+    env_file:
+      - .env 
+    environment:
+      - ConnectionStrings__DefaultConnection=${CONNECTION_STRING}
+    ports:
+      - "5000:80"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
