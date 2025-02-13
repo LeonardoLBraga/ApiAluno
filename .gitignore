@@ -1,0 +1,56 @@
+# Ignore os arquivos de variáveis de ambiente
+src/ApiAluno/appsettings.Development.json
+src/ApiAluno/appsettings.Production.json
+docker/.env
+
+# Ignore os arquivos de build
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]ist/
+[Dd]eploy/
+bin/
+obj/
+
+# Ignore arquivos de configuração do Visual Studio
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore arquivos de pacotes do NuGet
+*.nupkg
+
+# Ignore as pastas de pacotes de dependências
+packages/
+
+# Ignore os arquivos temporários do .NET
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Ignore arquivos de log
+*.log
+
+# Ignore configurações de publicação
+Publish/
+
+# Ignore arquivos de banco de dados locais
+*.mdf
+*.ldf
+
+# Ignore arquivos do Visual Studio Code
+.vscode/
+
+# Ignore os arquivos de cache de dependências
+.nuget/
+
+# Ignore as pastas do ASP.NET Core
+wwwroot/
+
+# Ignore arquivos de backup e temporários
+*~ 
+*.bak
+*.swp

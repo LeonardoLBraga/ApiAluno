@@ -1,0 +1,33 @@
+### Teste GET para listar todos os alunos
+GET http://localhost:5000/api/alunos
+Content-Type: application/json
+
+###
+
+### Teste POST para adicionar um novo aluno
+POST http://localhost:5000/api/alunos
+Content-Type: application/json
+
+{
+  "nome": "João Silva",
+  "idade": 20
+}
+
+###
+
+### Teste PUT para atualizar um aluno existente
+PUT http://localhost:5000/api/alunos/1
+Content-Type: application/json
+
+{
+  "nome": "João Silva Atualizado",
+  "idade": 21
+}
+
+###
+
+### Teste DELETE para excluir um aluno
+DELETE http://localhost:5000/api/alunos/1
+Content-Type: application/json
+
+###
