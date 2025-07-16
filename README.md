@@ -70,7 +70,11 @@ A API estará acessível em: [http://localhost:5000](http://localhost:5000)
 
 ## 🧪 Testes
 
-> (Adicione aqui se houver projeto de testes ou recomendações de ferramenta como xUnit, NUnit etc.)
+Os testes podem ser criados utilizando a ferramenta do XUnit com Moq para simulação de estruturas de dados e podem ser executados por meio do comando:
+
+```bash
+dotnet test
+```
 
 ---
 
