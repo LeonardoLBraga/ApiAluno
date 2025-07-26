@@ -1,5 +1,7 @@
 # 📚 API Aluno
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 API REST desenvolvida em ASP.NET Core com Entity Framework Core, destinada à gestão de alunos em ambiente educacional. Contempla operações CRUD e está pronta para uso em ambientes de desenvolvimento e produção com suporte Docker.
 
 ## 🚀 Tecnologias
@@ -70,11 +72,7 @@ A API estará acessível em: [http://localhost:5000](http://localhost:5000)
 
 ## 🧪 Testes
 
-Os testes podem ser criados utilizando a ferramenta do XUnit com Moq para simulação de estruturas de dados e podem ser executados por meio do comando:
-
-```bash
-dotnet test
-```
+> (Adicione aqui se houver projeto de testes ou recomendações de ferramenta como xUnit, NUnit etc.)
 
 ---
 
@@ -87,3 +85,36 @@ dotnet test
 - `Program.cs` — Entry point da aplicação
 
 ---
+
+
+// pasta docker
+docker-compose up -d --build
+
+docker-compose up -d
+docker-compose down
+
+// migrations
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+
+//run
+dotnet restore
+dotnet build
+dotnet run --console
+
+http://localhost:5000/api/Alunos
+
+// Se você usar Entity Framework Core para gerenciar o banco de dados, basta rodar as migrations diretamente no container.
+docker-compose exec webapi dotnet ef database update
+
+
+// dependencias instaladas
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.AspNetCore.OpenApi
+dotnet add package Swashbuckle.AspNetCore
+
+//docker
+docker ps
+docker exec -it aspnetcore_api bash
+127.0.0.1,1433
